@@ -125,4 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'ananta/static')
-STATIC_URL = '/static/rest_framework/'
+STATIC_URL = '/rest_framework/'
