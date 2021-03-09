@@ -40,8 +40,8 @@ class PredictorViewSet(viewsets.ModelViewSet):
                 print(value)
                 if (value!='NOUN'):
                     print("This is not a noun")
-                    return Response(f"{str} This is not a noun",status=status.HTTP_200_OK)
+                    return HttpResponse(f"{str} This is not a noun",status=status.HTTP_200_OK)
                 else: 
                     print(f"{str}: The {translate_text}")
-                    return Response(f"{str}: The {translate_text}", status=status.HTTP_200_OK)
+                    return HttpResponse(f"{str}: The {translate_text}", status=status.HTTP_200_OK)
                     
