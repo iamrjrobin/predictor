@@ -10,7 +10,7 @@ from rest_framework.permissions import AllowAny
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from .serializer import PredictorSerializer
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 
 
 
@@ -40,7 +40,8 @@ class PredictorViewSet(viewsets.ModelViewSet):
                 print(value)
                 if (value!='NOUN'):
                     print("This is not a noun")
-                    return Response(f"{str} This is not a noun")
+                    return Response(f"{str} This is not a noun",status=status.HTTP_200_OK)
                 else: 
                     print(f"{str}: The {translate_text}")
-                    return Response(f"{str}: The {translate_text}")
+                    return Response(f"{str}: The {translate_text}", status=status.HTTP_200_OK)
+                    
