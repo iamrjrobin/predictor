@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'if8a!eqg6szbyr!5o86b%g=&(p&%k5vcsp#)2gk03b*5-x!$i-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['movie-name-predictor-of-ananta.herokuapp.com',
                 'localhost',
